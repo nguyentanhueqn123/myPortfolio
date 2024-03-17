@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="./animation.css">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -15,13 +16,14 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skill">Skills</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Hue Nguyen</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -31,11 +33,14 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#work-experience" onclick="toggleMenu()">Work Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+    <div id="particles-js"></div> 
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/avatar.png" alt="Hue Nguyen profile picture" />
@@ -47,7 +52,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/CV_frontend.pdf')"
+            onclick="window.open('./assets/CV-Frontend-NguyenTanHue.pdf')"
           >
             Download CV
           </button>
@@ -69,7 +74,9 @@
             onclick="location.href='https://github.com/nguyentanhueqn123'"
           />
         </div>
+      
       </div>
+      
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -220,7 +227,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>NodeJS</h3>
                   <p></p>
                 </div>
               </article>
@@ -231,8 +238,19 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
+                  <h3>ExpressJS</h3>
                   <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database:</h3>
+                  <p>MongoDB, SQL</p>
                 </div>
               </article>
               
@@ -240,12 +258,38 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-      />
+      /> -->
+    </section>
+    <section id="work-experience">
+      <h1 class="title">Work Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-end Developer Internship</h2>
+            <h3>09/2023 - 12/2023 - Company:  “TNHH TMDV XNK Quang Hải”</h3>
+            <div class="article-container">
+              <ul>
+                <li>Developed client-side features using ReactJS and Ionic Framework, ensuring responsive and user-friendly interfaces across browsers. </li>
+                <li>Integrated RESTful APIs for dynamic content display, while also contributing to code reviews, debugging, and troubleshooting. </li>
+                <li>Collaborated with the team to achieve project milestones, demonstrating adaptability in learning new technologies as needed.</li>
+              </ul>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -307,10 +351,10 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact" style="margin-top: 4rem;">
+    <section id="contact" style="margin-top: 11rem;">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -342,6 +386,7 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skill">Skills</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -349,6 +394,14 @@
       </nav>
       <p>Copyright &#169; 2023 Hue Nguyen</p>
     </footer>
+   
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <!-- stats.js lib --> 
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
     <script src="script.js"></script>
+    <script src="./animation.js"></script>
   </body>
 </html>
