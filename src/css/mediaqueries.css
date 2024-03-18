@@ -15,6 +15,9 @@
   #hamburger-nav {
     display: flex;
   }
+  #particles-js {
+    z-index: -1;
+  }
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -41,13 +44,20 @@
   .about-containers {
     margin-top: 0;
   }
+  #contact {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  #contact {
+    margin-top: 0;
+  }
   #contact,
   footer {
     height: 40vh;
   }
+
   #profile {
     height: 83vh;
     margin-bottom: 0;
@@ -95,5 +105,11 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .experience-content {
+    text-align: justify;
+  }
+  .contact-info-upper-container {
+    padding: 20px 0;
   }
 }
