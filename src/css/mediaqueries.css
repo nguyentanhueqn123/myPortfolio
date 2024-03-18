@@ -29,6 +29,9 @@
   .arrow {
     display: none;
   }
+  .arrow__skill {
+    display: none;
+  }
   section,
   .section-container {
     height: fit-content;
@@ -44,8 +47,20 @@
   .about-containers {
     margin-top: 0;
   }
+
   #contact {
     margin-top: 0;
+  }
+  .card-containers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+  .card__v2 {
+    margin-top: 4rem;
   }
 }
 
@@ -111,5 +126,21 @@
   }
   .contact-info-upper-container {
     padding: 20px 0;
+  }
+  .card-containers {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 20px;
+  }
+  .card__v2 {
+    margin-top: 4rem;
+  }
+  .project_v1 {
+    display: none;
+  }
+  .project_v2 {
+    display: block;
   }
 }
